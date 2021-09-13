@@ -1,0 +1,898 @@
+body{
+    font-family: 'Manrope', sans-serif !important;
+}
+.navv{
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    background-color: lightseagreen;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: lightseagreen;
+    text-align: center;
+}
+main{
+    background-color: #F0F5FC;
+}
+
+.breadcrumb{
+    background-color: transparent;
+    padding-top: 100px;
+    padding-left: 0;
+    transform: translate(-15px, 0);
+
+}
+.breadcrumb a{
+    color: #8F8F8F;
+    font-size: 12px;
+}
+.breadcrumb li{
+    font-size: 12px;
+}
+.breadcrumb .active{
+    color: #8F8F8F;
+}
+.home_icom img{
+    padding-bottom: 5px;
+}
+.status h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    color: #0A1938;
+    margin-bottom: 18px;
+}
+.online{
+    width: 9px;
+    height: 9px;
+    background: #02CE77;
+    border-radius: 50%;
+}
+.status p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #797979;
+    margin-bottom: 0;
+    margin-left: 3px;
+}
+.full_vieu{
+    width: 761px;
+    height: 527px;
+    position: absolute;
+    
+}
+.full_vieu img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.video_icons{
+    top: 0;
+    left: 0;
+    position: relative;
+    width: 761px;
+    height: 527px;
+}
+.video_icons svg{
+    position: absolute;
+    display: none;
+    cursor: pointer;
+}
+.video_icons svg path{
+    fill: #fff;
+    stroke: #fff;
+}
+.play{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.option{
+    top: 93.5%;
+    left: 90%;
+}
+.full_screen{
+    top: 94%;
+    left: 95%;
+}
+.video_block:hover .video_icons svg{
+    display: block;
+}
+.video_block:hover img{
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+.badge{
+    background: #CBCBCB;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    margin-left: 5px;
+}
+.special{
+    background: #E75E5E;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    padding: 1px 9px;
+    width: 170px;
+}
+.add_block{
+    margin-top: 38px;
+    margin-bottom: 18px;
+}
+.add_texts{
+    width: 100%;
+    padding: 31px 20px;
+    background: linear-gradient(180deg, #AADCFD 0%, #ABDEFD 35.42%, #95D0F2 63.44%, #97D2F2 80.59%, #8DCCEB 99.58%);
+}
+.add_texts h2{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+}
+.add_texts span{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #E55D5D;
+}
+.add_text{
+    font-weight: 400;
+    font-size: 11px;
+    color: #FFFFFF;
+    line-height: 19px;
+}
+.add_texts button{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    background: #00498D;
+    width: 157px;
+    height: 35px;
+}
+.add_texts button:hover{
+    background-color: #03cd77 ;
+}
+.add_texts button:active{
+    background-color: #1D9D67 ;
+}
+.add_img{
+    right: 0;
+    position: absolute;
+}
+.weather_forecast{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0;
+}
+.weather_city p{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0;
+}
+.weather_C p{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 45px;
+    color: #3987D0;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0;
+}
+.weather{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 9px;
+    padding-left: 14px;
+    padding-right: 20px;
+}
+.about_weather{
+    margin-left: 20px;
+}
+.map{
+    width: 70%;
+    height: 98px;
+    background-image: url(img/image\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map svg{
+    width: 34px;
+    height: 47px;
+}
+.map svg path{
+    fill: #02CE77;
+}
+.map_weather_block{
+    margin-bottom: 30px;
+}
+.commenter_avat{
+    width: 50px;
+    height: 50px;
+    border-radius:50%
+}
+.commenter_avat img{
+    width: 100%;
+}
+.name_of_commenter{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.04em;
+    color: #3987D0;
+    margin: 0;
+    padding-left: 12px;
+    padding-right: 24px;
+}
+.comment_city{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;    
+    text-decoration-line: underline;
+    color: #676666;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    padding-left: 22px;
+}
+.comment{
+    background: #FFFFFF;
+    border-radius: 20px 20px 20px 0px;
+    padding: 18px 14px 11px 21px;
+    margin-bottom: 13px;
+}
+.comment_text p{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 168.9%;/* or 22px */
+    color: #000000;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    padding-top: 6px;
+    padding-bottom: 13px;
+    margin: 0;
+}
+.comment_day p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 187.9%; /* or 26px */
+    text-align: right;
+    color: #676666;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    margin: 0;
+}
+.new_comment{
+    width: 100%;
+    margin-top: 30px;
+}
+.new_comment h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 165.9%;
+/* identical to box height, or 27px */
+    letter-spacing: 0.04em;
+    color: #0A1938;
+}
+.new_comment input{
+    border: 1px solid #DCDCDC;
+    width: 295px;
+    height: 55px;
+    padding-left: 20px;
+
+}
+.new_comment textarea{
+    width: 100%;
+    height: 142px;
+    border: 1px solid #DCDCDC;
+    margin-top: 13px;
+    resize: none; 
+    padding-top: 15px;
+    padding-left: 20px;
+}
+.new_comment button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 133.9%;
+    text-align: center;
+    color: #FFFFFF;
+    background: #03CD77;
+    border-radius: 3px;
+    margin-top: 13px;
+    margin-bottom: 25px;
+}
+::placeholder { 
+    color: #B4B4B4;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 187.9%;
+}
+:-ms-input-placeholder {
+    color: #B4B4B4;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 187.9%;
+}
+::-ms-input-placeholder { 
+    color: #B4B4B4;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 187.9%;
+}
+.statistics h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 165.9%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.04em;
+    color: #0A1938;
+}
+.statistics_icon span{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #494A4A;
+}
+.statistics_icon svg{
+      width: 16px;
+}
+.eye path{
+      stroke: #8F8F8F;
+  }
+.like path{
+      fill: #00C48C;
+}
+.dislike path{
+    fill: #E75E5E;
+}
+.repost path{
+    fill: #00498D;
+}
+.comment_icon path{
+    fill: #494A4A;
+}
+.eye span, .like span, .dislike span, .repost span, .comment_icon span{
+    margin-left: 3px;
+}
+.eye , .like , .dislike , .repost , .comment_icon {
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+}
+.name span, .page span, .data span{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 187.9%;/* or 26px */
+    color: #676666;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+}
+.page p, .data p{
+    font-weight: 600;
+font-size: 14px;
+line-height: 165.9%;
+/* or 23px */
+
+letter-spacing: 0.04em;
+
+color: #0A1938;
+padding-left: 12px;
+}
+.nearby_cameras h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 165.9%;
+    /* identical to box height, or 27px */
+    letter-spacing: 0.04em;
+    color: #0A1938;
+}
+.nearby_camera_img{
+    width: 75px;
+    height: 57px;
+}
+.nearby_camera_img img{
+    width: 100%;
+    height: 50px;
+}
+.flag{
+    margin-right: 5;
+}
+.nearby_camera_name h3{
+    font-weight: 700;
+font-size: 14px;
+line-height: 165.9%;
+/* or 23px */
+
+letter-spacing: 0.04em;
+
+color: #0A1938;
+margin-bottom: 0;
+}
+.camera_status{
+    display: flex;
+    align-items: center;
+}
+.nearby_cameras_block{
+    overflow: auto;
+    height: 390px;
+}
+.nearby_cameras_block::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+.nearby_cameras_block::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px white;
+}
+ 
+.nearby_cameras_block::-webkit-scrollbar-thumb {
+  background-color: #8F8F8F;
+}
+.autor_page_data{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+.autor_page_data_block1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 12px;
+}
+.autor_page_data_block2 p{
+    margin-bottom: 0;
+    padding-left: 0;
+    font-weight: 600;
+font-size: 14px;
+line-height: 187.9%;/* or 26px */
+
+
+letter-spacing: 0.04em;
+
+color: #0A1938;
+}
+.autor_page_data_block1 span{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 187.9%;/* or 26px */
+    color: #676666;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+}
+.more_information{
+    margin-top: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.more_information p{
+    font-size: 14px;
+    margin: 0 0 10px;
+}
+.more_info_a{
+    text-decoration: none;
+    color:#3987D0 ;
+}
+.more_info_a:hover{
+    text-decoration:underline;
+    color:#246db1 ;
+}
+.online_tags{
+    margin-top: 10px;
+}
+.input_block{
+    width: 80%;
+}
+.min_media_h, .min_media .statistics_icon, .min_media .autor_page_data{
+    display: none !important;
+}
+.main_btn{
+    background-color: #03cd77 !important;
+    border: none;
+    width: 277px;
+    height: 46px;
+    font-size: 16px;
+}
+.main_btn:hover{
+    background-color: #1B2B49 !important;
+}
+.main_btn:active{
+    background-color: #1D9D67 !important;
+    outline: none !important;
+    box-shadow:none !important;
+}
+.show_camera{
+    display: none;
+}
+.show_camera svg{
+    width: 14px;
+    height: 8px;
+    margin-left: 20px;
+}
+.show_camera svg path{
+    fill: #188D5B;
+}
+.show_camera_rotate{
+    transform: rotate(180deg);
+}
+input:focus {
+    outline: none;
+    border: 2px solid #30A1DB;
+}
+textarea:focus {
+    outline: none;
+    border: 2px solid #30A1DB;
+}
+
+
+@media (max-width: 1200px) {
+    .show_camera{
+        display: block;
+    }
+    .camera_right_block{
+        padding: 0;
+    }
+    .input_block{
+        width: 63%;
+    }
+    .autor_page_data{
+        margin-bottom: 0;
+    }
+    .max_media_h, .max_media .statistics_icon, .max_media .autor_page_data{
+        display: none !important;
+    }
+    .min_media_h, .min_media .statistics_icon, .min_media .autor_page_data{
+        display: flex !important;
+    }
+    .name_camera{
+        width: 82%;
+        margin: auto;
+    }
+    .nearby_cameras{
+        display: none;
+        background: white;
+        padding: 0 10px;
+    }
+    .nearby_camera_img {
+        width: 171px;
+        height: 96px;
+    }
+    .nearby_camera_img img{
+        height: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .input_block{
+        width: 85%;
+    }
+    .add_text{
+        width: 50%;
+    }
+    .add_texts {
+        padding: 10px 20px;
+    }
+    .add_texts h2 {
+        width: 30%;
+    }
+    .name_camera{
+        width: 100%;
+        margin: auto;
+    }
+}
+@media (max-width: 991px) {
+    .add_texts h2 {
+        width: 46%;
+    }
+}
+@media (max-width: 768px) {
+    .breadcrumb{
+        display: none;
+    }
+    .status h2 {
+        padding-top: 100px;
+    }
+    .form_block{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .input_block{
+        width: 100%;
+    }
+    .full_vieu, .video_icons{
+        width: 530px;
+        height: 301px;
+    }
+    .status h2{
+        text-align: center;
+    }
+    .new_comment input{
+        width: 260px;
+    }
+    .add_texts {
+        padding: 25px 20px;
+    }
+    .add_text{
+        display: none;
+    }
+    .add_texts h2 {
+        width: 30%;
+    }
+    .name_camera .status{
+        display: none !important;
+    }
+    .who_comment {
+        flex-wrap: wrap;
+    }
+    .comment_city{
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    .who_comment .star{
+        flex: 2;
+        text-align: right;
+    }
+    .form_block .star{
+        margin-top: 20px;
+    }
+    .show_camera, form{
+        text-align: center;
+    }
+    .option {
+        top: 88.5%;
+        left: 88%;
+    }
+    .full_screen {
+        top: 89%;
+        left: 94%;
+    }
+}
+@media (max-width: 580px) {
+    .weather {
+        flex-direction: column;
+    }
+    .weather_city p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .weather_C p {
+        font-size: 24px;
+        line-height: 41px;
+    }
+    .weather_forecast{
+        display: none;
+    }
+    .about_weather{
+        margin-left: 0;
+    }
+    .map {
+        height: 132px;
+    }
+    .full_vieu, .video_icons {
+        width: 400px;
+        height: 218px;
+    }
+    .online_tags {
+        /* margin: auto;
+        width: 78%;
+        margin-top: 10px; */
+    }
+    .left_block {
+        align-items: center;
+    }
+    .container{
+        width: 95%;
+    }
+    .status h2{
+        font-size: 14px;
+        line-height: 148.4%;
+    }
+    .name_camera {
+        width: 60%;
+    }
+    .min_media_h{
+        font-size: 14px;
+        line-height: 165.9%;
+        text-align: center;
+        display: block !important;
+    }
+    .autor_page_data{
+        justify-content: center;
+    }
+    .autor_page_data_block2 p{
+        font-size: 12px;
+        line-height: 187.9%;
+    }
+    .autor_page_data_block1 span{
+        font-size: 12px;
+        line-height: 187.9%;
+    }
+    .special{
+        font-size: 9px;
+        line-height: 168.9%;
+    }
+    .add_texts h2{
+        font-size: 18px;
+        line-height: 100%;
+    }
+    .add_texts span{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .add_img img{
+        width: 265px;
+    }
+    .add_texts h2 {
+        width: 25%;
+    }
+    .add_texts {
+        padding: 18px 20px;
+    }
+    .add_texts button{
+        font-size: 10px;
+        line-height: 100%;
+        margin-top: 5px;
+    }
+    .comment_text p, .comment_city{
+        font-size: 11px;
+        line-height: 187.9%;
+    }
+    .comment_city{
+        width: 100%;
+    }
+    .comment_day p{
+        font-size: 12px;
+        line-height: 187.9%;
+    }
+    .new_comment h3{
+        font-size: 14px;
+        line-height: 165.9%;
+    }
+    ::placeholder { 
+        color: #B4B4B4;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 187.9%;
+    }
+    :-ms-input-placeholder {
+        color: #B4B4B4;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 187.9%;
+    }
+    ::-ms-input-placeholder { 
+        color: #B4B4B4;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 187.9%;
+    }
+    .new_comment input{
+        height: 38px;
+    }
+    .new_comment textarea{
+        height: 156px;
+    }
+    .new_comment button{
+        font-size: 12px;
+        line-height: 133.9%;
+    }
+    #opencameras{
+        font-size: 12px;
+        line-height: 133.9%;
+    }
+    .more_information p{
+        font-size: 12px;
+    }
+    .play{
+        width: 50px;
+    }
+    .option, .full_screen{
+        width: 15px;
+    }
+    .badge{
+        font-size: 9px;
+line-height: 187.9%;
+    }
+    .add_block{
+        height: 177px;
+        background: linear-gradient( 
+    180deg, #AADCFD 0%, #ABDEFD 35.42%, #95D0F2 63.44%, #97D2F2 80.59%, #8DCCEB 99.58%);
+    }
+    .add_texts{
+        position: absolute;
+        z-index: 111111111111111;
+        background: transparent
+    }
+    .add_img{
+        z-index: 111111;
+    }
+    .nearby_camera_img {
+        width: 120px;
+        height: 96px;
+    }
+    .nearby_camera_name h3{
+        font-size: 12px;
+    }
+}
+@media (max-width: 420px) {
+    .add_block{
+        justify-content: center;
+        width: 80%;
+    margin: auto;
+    }
+    .add_img{
+        position: inherit ;
+        text-align: center;
+    }
+    .add_block{
+        height: auto;
+    }
+    .add_texts {
+        position: inherit;
+        text-align: center;
+    }
+    .special{
+        margin: auto;
+    }
+    .add_texts h2{
+        width: 100%;
+    }
+    .new_comment input {
+        width: 180px;
+    }
+}
+@media (max-width: 400px) {
+    .full_vieu, .video_icons {
+        width: 260px;
+        height: 150px;
+    }
+    .play{
+        width: 50px;
+    }
+    .option, .full_screen{
+        width: 11px;
+    }
+    .option {
+        top: 84.5%;
+        left: 88%;
+    }
+    .full_screen {
+        top: 86%;
+        left: 94%;
+    }
+    .add_block{
+        width: 100%;
+    }
+    .input_block{
+        flex-direction: column;
+    }
+    .new_comment input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
