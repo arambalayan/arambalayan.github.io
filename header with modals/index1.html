@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container container1">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+            <div class="sign_in_modal text-center avatar_mobile dropdown">
+                <div class="dropdown-toggle toggle2" id="navbarDropdownMenuLink" data-toggle="modal" data-target="#loginModal" >
+                    <svg class="icons_hover icons_active" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M22 12L18.667 16M13 12H22H13ZM22 12L18.667 8L22 12Z" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 6.99997V5.17397C14 4.89735 13.9426 4.62373 13.8314 4.37042C13.7203 4.11711 13.5578 3.88961 13.3542 3.70231C13.1507 3.515 12.9104 3.37196 12.6488 3.28222C12.3871 3.19249 12.1097 3.15801 11.834 3.18097L3.834 3.84697C3.33405 3.88861 2.86801 4.11662 2.5283 4.48578C2.18859 4.85494 2.00002 5.33829 2 5.83997V18.16C2.00002 18.6617 2.18859 19.145 2.5283 19.5142C2.86801 19.8833 3.33405 20.1113 3.834 20.153L11.834 20.82C12.1098 20.8429 12.3873 20.8084 12.649 20.7186C12.9107 20.6288 13.151 20.4857 13.3546 20.2983C13.5582 20.1109 13.7206 19.8833 13.8317 19.6298C13.9428 19.3764 14.0001 19.1027 14 18.826V17" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active mx-auto ">
+                        <a class="nav-link" href="#">Все камеры<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-auto ">
+                        <a class="nav-link" href="#">Мои камеры  </a>
+                    </li>
+                    <li class="nav-item mx-auto ">
+                        <a class="nav-link" href="#">О проекте</a>
+                    </li>
+                    <li class="nav-item mx-auto ">
+                        <a class="nav-link" href="#">Фото</a>
+                    </li>
+                    <li class="nav-item centered mx-auto " id="map">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                            <path d="M20.4166 7.58342L26.8333 10.5001V25.6667L18.6666 22.1667L9.33329 25.6667L1.16663 22.1667V7.00008L6.99996 9.33342L20.4166 7.58342ZM18.6666 22.1667V14.0001V22.1667ZM9.33329 25.6667V14.0001V25.6667ZM14 18.9853C14 18.9853 6.99996 13.4167 6.99996 8.16675C6.99996 3.79175 10.5 1.16675 14 1.16675C17.5 1.16675 21 3.79175 21 8.16675C21 13.4167 14 18.9853 14 18.9853ZM15.1666 8.16675C15.1666 7.85733 15.0437 7.56058 14.8249 7.34179C14.6061 7.123 14.3094 7.00008 14 7.00008C13.6905 7.00008 13.3938 7.123 13.175 7.34179C12.9562 7.56058 12.8333 7.85733 12.8333 8.16675C12.8333 8.47617 12.9562 8.77291 13.175 8.99171C13.3938 9.2105 13.6905 9.33342 14 9.33342C14.3094 9.33342 14.6061 9.2105 14.8249 8.99171C15.0437 8.77291 15.1666 8.47617 15.1666 8.16675Z" stroke="#3987D0" stroke-width="2"/>
+                        </svg>
+                        <a class="nav-link" href="#">На карте</a>
+                    </li>
+                    <li class="nav-item m-auto mx-auto star ">
+                        <img src="img/star.png" alt="">
+                    </li>
+                    <div id="lang_selector" class="language-dropdown">
+                        <label for="toggle" class="lang-flag lang-en" title="Click to select the language">
+                            <span class="flag"></span>
+                        </label>
+                        <ul class="lang-list">
+                            <li class="lang lang-en selected" title="EN">
+                                <span class="flag"></span>
+                            </li>
+                            <li class="lang lang-pt" title="PT">
+                                <span class="flag"></span>
+                            </li>
+                            <li class="lang lang-es" title="ES">
+                                <span class="flag"></span>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <div class="sign_in_modal text-center avatar_desc dropdown">
+                    <div class="dropdown-toggle toggle2" id="navbarDropdownMenuLink" data-toggle="modal" data-target="#loginModal" >
+                        <svg class="icons_hover icons_active" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M22 12L18.667 16M13 12H22H13ZM22 12L18.667 8L22 12Z" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 6.99997V5.17397C14 4.89735 13.9426 4.62373 13.8314 4.37042C13.7203 4.11711 13.5578 3.88961 13.3542 3.70231C13.1507 3.515 12.9104 3.37196 12.6488 3.28222C12.3871 3.19249 12.1097 3.15801 11.834 3.18097L3.834 3.84697C3.33405 3.88861 2.86801 4.11662 2.5283 4.48578C2.18859 4.85494 2.00002 5.33829 2 5.83997V18.16C2.00002 18.6617 2.18859 19.145 2.5283 19.5142C2.86801 19.8833 3.33405 20.1113 3.834 20.153L11.834 20.82C12.1098 20.8429 12.3873 20.8084 12.649 20.7186C12.9107 20.6288 13.151 20.4857 13.3546 20.2983C13.5582 20.1109 13.7206 19.8833 13.8317 19.6298C13.9428 19.3764 14.0001 19.1027 14 18.826V17" stroke="#8F8F8F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--<div class="g-recaptcha" data-sitekey="6LeR31wcAAAAAIt4E_&#45;&#45;zJ3s8x0vl7O5PLjFgz-R"></div>-->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content login-modal">
+            <div class="modal-header login-modal-header flex-column">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center mx-auto" id="loginModalLabel">Авторизация</h4>
+                <h4 class="modal-title text-center mx-auto" id="SignupModalLabel">Регистрация</h4>
+                <div  id="Forgetpassword">
+                <h4 class="modal-title text-center mx-auto">Восстановление пароля</h4>
+                <span class="mx-auto text-center">Введите ваш логин, и мы вышлем вам инструкцию по восстановлению пароля на E-mail</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <div role="tabpanel" class="login-tab">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a id="signin-taba" href="#home" aria-controls="home" role="tab" data-toggle="tab">Sign In</a></li>
+                            <li role="presentation"><a id="signup-taba" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sign Up</a></li>
+                            <li role="presentation"><a id="forgetpass-taba" href="#forget_password" aria-controls="forget_password" role="tab" data-toggle="tab">Forget Password</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active text-center" id="home">
+                                &nbsp;&nbsp;
+                                <span id="login_fail" class="response_error" style="display: none;">Loggin failed, please try again.</span>
+                                <div class="clearfix"></div>
+                                <form>
+                                    <div class="form-group first_child">
+                                    <div>
+                                        <a class="btn btn-lg btn-google btn1" href="#">
+                                            <img src="img/google.png"> Войти с помощью Google</a>
+                                    </div>
+                                        <span style="font-size:14px">или создайте аккаунт</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="login_username" placeholder="Ваш логин">
+                                        </div>
+                                        <span class="help-block has-error" id="email-error"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" id="password" placeholder="Ваш пароль">
+                                        </div>
+                                        <div class="password_error">
+                                            <span>Неверно заполнено</span>
+                                            <a href="javascript:;" class="forgetpass-tab">Напомнить пароль</a>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="6LeR31wcAAAAAIt4E_--zJ3s8x0vl7O5PLjFgz-R" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <button type="button" id="login_btn" class="btn btn-block bt-login  sign_btn" data-loading-text="Signing In....">Войти</button>
+                                    <div class="clearfix"></div>
+                                    <br>
+                                    <div class="login-modal-footer">
+                                        <div class="row">
+                                            <div class="register">
+                                                <span>Еще нет аккаунта?</span>
+                                                <a href="javascript:;" class="signup-tab"> Зарегистрироваться </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                &nbsp;&nbsp;
+                                <span id="registration_fail" class="response_error" style="display: none;">Registration failed, please try again.</span>
+                                <div class="clearfix"></div>
+                                <form>
+
+                                    <div class="form-group first_child">
+                                        <div>
+                                            <a class="btn btn-lg btn-google btn1" href="#">
+                                                <img src="img/google.png"> Войти с помощью Google</a>
+                                        </div>
+                                        <span style="font-size:14px">или создайте аккаунт</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="login_username" placeholder="Ваш логин">
+                                        </div>
+                                        <span class="help-block has-error" id="email-error"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" placeholder="Ваш пароль">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" id="login_number" placeholder="+7 (999) 999 99 99">
+                                        </div>
+                                        <span class="help-block has-error" id="email-error"></span>
+                                    </div>
+                                    <div class="form-group code_group">
+                                        <button type="button" class="btn code_btn">Получить смс </button>
+                                        <input class="enter_code" type="text" placeholder="Введите код из смс">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="6LeR31wcAAAAAIt4E_--zJ3s8x0vl7O5PLjFgz-R" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <button type="button" id="login_btn" class="btn btn-block bt-login  sign_btn" data-loading-text="Signing In....">Войти</button>
+                                    <div class="clearfix"></div>
+                                    <br>
+
+
+                                    <div class="login-modal-footer">
+                                        <div class="row">
+                                            <div class="register">
+                                                <span>Еще нет аккаунта?</span>
+                                                <a href="javascript:;" class="signin-tab"> Войти </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane text-center" id="forget_password">
+                                &nbsp;&nbsp;
+                                <span id="reset_fail" class="response_error" style="display: none;"></span>
+                                <div class="clearfix"></div>
+                                <form>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                            <input type="text" class="form-control" id="femail" placeholder="Ваш логин">
+                                        </div>
+                                        <span class="help-block has-error" data-error='0' id="femail-error"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="6LeR31wcAAAAAIt4E_--zJ3s8x0vl7O5PLjFgz-R" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <br>
+                                    <br>
+
+                                    <button type="button" id="reset_btn" class="btn btn-block bt-login sign_btn" data-loading-text="Please wait....">Подтвердить</button>
+                                    <div class="clearfix"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- - Login Model Ends Here -->
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="scripts/script.js"></script>
+
+</body>
+</html>

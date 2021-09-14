@@ -8,9 +8,14 @@ body{
     background-color: lightseagreen;
     text-align: center;
 }
+footer{
+    text-align: center;
+    height: 83px;
+    background-color: teal;
+}
 main{
     background-color: #F0F5FC;
-    height: 100vh;
+    height: calc(100vh - 83px);
 }
 .breadcrumb{
     background-color: transparent;
@@ -35,6 +40,158 @@ main{
     height: 100%;
     transition: 0.5s;
 }
+.subjectss .badge{
+    background: #3987D0;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 187.9%;
+    color: #FFFFFF;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    padding-left: 11px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.badge:hover{
+    background: #3987D0 !important;
+    color: #FFFFFF !important;
+
+}
+.language-dropdown {
+    display: inline-block;
+    /*filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+}
+/* .lang-flag span{
+    position: relative;
+}
+.lang-flag span:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(50%,-55%);
+    width: 5px;
+    height: 5px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #C4C4C4;
+} */
+.language-dropdown .lang-en .flag {
+    background-image: url("../img/russia.svg");
+}
+.language-dropdown .lang-pt .flag {
+    background-image: url("../img/france.svg");
+}
+.language-dropdown .lang-es .flag {
+    background-image: url("../img/china.svg");
+}
+.language-dropdown label, .language-dropdown ul li {
+    display: flex;
+    width: 154px;
+    height: 38px;
+    background: #fff;
+    padding: 0px 6px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+.language-dropdown ul.lang-list {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    /* position: absolute; */
+    padding: 0
+    ;
+}
+.language-dropdown ul.lang-list li {
+    /* border-bottom: 1px solid #0c0a0a; */
+}
+.language-dropdown ul.lang-list li:last-child {
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.language-dropdown ul.lang-list li.selected {
+    display: none;
+}
+.language-dropdown label {
+    position: relative;
+    border-radius: 3px;
+    z-index: 2;
+}
+.language-dropdown label{
+    margin-bottom: 0;
+}
+.language-dropdown .lang-flag .flag, .language-dropdown .lang-list .lang .flag {
+    float: left;
+    width: 69.36px;
+    height: 100%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.language-dropdown.open ul.lang-list {
+    visibility: visible;
+    opacity: 1;
+}
+.language-dropdown.open label {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.animate, .lang-flag, .lang-list {
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+#lang_selector label{
+    display: flex;
+    width: 154px;
+    align-items: center;
+    justify-content: space-between;
+}
+#fran{
+    display: none;
+}
+#chin{
+    display: none;
+}
+.flag_name{
+    padding-left: 14px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 187.9%;
+    color: #000000;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+}
+.lang:hover{
+    background: #CCE6F3
+}
+.lang-flag svg{
+    position: absolute;
+    right: 5px;
+}
+
+.city_selector .form-control{
+    border: transparent;
+    cursor: pointer;
+}
+.city_selector .form-control:focus{
+    border: none;
+    outline:  none;
+    box-shadow: none;
+}
+
+
+
+
+
+
 .camera_settings h2{
     font-weight: 700;
     font-size: 16px;
@@ -48,16 +205,18 @@ main{
     line-height: 165.9%;
     letter-spacing: 0.04em;
     color: #0A1938;
+    margin-bottom: 4px;
 }
-.camera_settings input{
+.about_cameras input{
     width: 100%;
     height: 55px;
     border: 1px solid #DCDCDC;
     padding-left: 20px;
     font-size: 14px;
     color: #2F2F2F;
+    margin-bottom: 14px;
 }
-.camera_settings textarea{
+.about_cameras textarea{
     resize: none;
     width: 100%;
     height: 72px;
@@ -67,6 +226,7 @@ main{
     color: #2F2F2F;
     padding-top: 13px;
     padding-bottom: 10px;
+    margin-bottom: 14px;
 }
 input:focus {
     outline: none;
@@ -75,4 +235,258 @@ input:focus {
 textarea:focus {
     outline: none;
     border: 2px solid #30A1DB;
+}
+.camera_settings .badge{
+    background: #3987D0;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 200%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FBFBFB;
+    text-shadow: 13px 1px 45px rgba(0, 0, 0, 0.15);
+    padding: 0 10px;
+    cursor: pointer;
+}
+.badge-checkboxes .checkbox input[type="checkbox"],
+.badge-checkboxes label.checkbox-inline input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+.badge-checkboxes .checkbox label,
+.badge-checkboxes label.checkbox-inline {
+    padding-left:0; 
+}
+.badge-checkboxes .checkbox input[type="checkbox"] + .badge,
+.badge-checkboxes label.checkbox-inline input[type="checkbox"] + .badge {
+    border:1px solid #DCDCDC; 
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.badge-checkboxes .checkbox input[type="checkbox"]:not(:checked) + .badge,
+.badge-checkboxes label.checkbox-inline input[type="checkbox"]:not(:checked) + .badge{
+    background-color:Transparent;
+    color:#2F2F2F;
+}
+.geodata button{
+    width: 237px;
+    height: 48px;
+    background: #3987D0;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 133.9%;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.geodata button svg{
+    margin-right: 7px;
+}
+.geodata button:hover{
+    background: #255C8E;
+}
+.geodata button:hover svg path{
+    fill: #3987D0;
+}
+.geodata{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.geodata label{
+    margin-bottom: 0;
+}
+.radio_block{
+    display: flex;
+    margin-top: 23px;
+    margin-bottom: 19px;
+}
+
+.btn_save{
+    width: 100%;
+    height: 48px;
+    background: #03CD77;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 133.9%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.btn_save:hover{
+    background-color: #1B2B49 !important;
+}
+.btn_save:active{
+    background-color: #1D9D67 !important;
+    outline: none !important;
+    box-shadow:none !important;
+}
+
+
+.rdio {
+    position: relative;
+    margin-right: 28px;
+}
+.rdio input[type="radio"] {
+    opacity: 0;
+}
+.rdio label {
+    padding-left: 10px;
+    cursor: pointer;
+    margin-bottom: 7px !important;
+}
+.rdio label:before {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    content: '';
+    display: inline-block;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border: 1px solid #CBCBCB;
+    background: #fff;
+}
+.rdio input[type="radio"] {
+    margin: 0px;
+}
+.rdio input[type="radio"]:disabled + label {
+    color: #999;
+}
+.rdio input[type="radio"]:disabled + label:before {
+    background-color: #02CE77;
+}
+.rdio input[type="radio"]:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    display: inline-block;
+    font-size: 11px;
+    width: 10px;
+    height: 10px;
+    background-color: #02CE77;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.rdio-default input[type="radio"]:checked + label:before {
+    border-color: #CBCBCB;
+}
+.rdio-primary input[type="radio"]:checked + label:before {
+    border-color: #CBCBCB;
+}
+.rdio-primary input[type="radio"]:checked + label::after {
+    background-color: #02CE77;
+}
+.modal_input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal_input input{
+    height: 55px;
+    width: 162px;
+    border: 1px solid #DCDCDC;
+    font-size: 14px;
+    line-height: 187.9%;
+    color: #2F2F2F;
+    padding-left: 20px;
+}
+.modal_input button{
+    height: 55px;
+    background: #03CD77;
+    border-radius: 3px;
+}
+.modal_input button:hover{
+    background-color: #1B2B49 !important;
+}
+.modal_input button:active{
+    background-color: #1D9D67 !important;
+    outline: none !important;
+    box-shadow:none !important;
+}
+.modal-content{
+    width: 85%;
+    background: #F0F5FC;
+}
+.modal-header, .modal-footer{
+    border: none;
+}
+.btn_modal{
+    width: 100%;
+    height: 48px;
+    background: #03CD77;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 133.9%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.btn_modal:hover{
+    background-color: #1B2B49 !important;
+}
+.btn_modal:active{
+    background-color: #1D9D67 !important;
+    outline: none !important;
+    box-shadow:none !important;
+}
+.map{
+    height: 262px;
+    background-image: url(../img/image\ 3.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+}
+.map svg{
+    width: 22px;
+    height: 29px;
+    transform: translate(10px, -30px);
+}
+.map svg path{
+    fill: #02CE77;
+}
+.modal-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 165.9%;
+    letter-spacing: 0.04em;
+    color: #0A1938;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.modal-header{
+    text-align: center;
+    padding-bottom: 0;
+}
+.modal-header button{
+    outline: none;
+}
+.modal-body{
+    padding-top: 0;
+}
+
+
+@media (max-width: 1500px) {
+    main {
+        min-height: calc(100vh - 48px);
+        height: auto;
+    }
+    .full_vieu {
+        width: 533px;
+        height: 300px;
+    }
 }
